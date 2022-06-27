@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asm-ps24074</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="box"></div>
+            <div class="box1"></div>
+            <div class="sign-in" style="font-weight: bold; font-size:medium;;">
+                <select name="" id="" style="color: red; font-weight: bold">
+                    <option value="0">VN</option>
+                    <option value="1">EN</option>
+                </select>|
+                <a href="dangnhap.html" style="color: black; text-decoration: none;">Đăng Nhập</a>
+            </div>
+            <div class="logo"><img src="https://kfcvietnam.com.vn/templates/images/logo_pc.png" alt=""></div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="combo1nguoi.html" target="tin">COMBO 1 NGƯỜI</a></li>
+                    <li><a href="">COMBO NHÓM</a></li>
+                    <li><a href="">ƯU ĐÃI - MÓN MỚI</a></li>
+                    <li><a href="">MÓN LẺ</a></li>
+                    <li class="giohang"><a href="giohang.html" style="color: red;">GIỎ HÀNG</a></li>
+                </ul>
+                <!-- <div class="giohang"><a href="">GIỎ HÀNG</a></div> -->
+            </nav>
+        </header>
+        <!---->
+        <!---->
+        <article>
+            <div class="banner">
+                <!-- <img src="img/banner.png" alt=""> -->
+                <img src="img/anh0.png" alt="" stt="1" id="hinh">
+                <img src="img/anh1.png" alt="" stt="2" id="hinh" style="display: none;">
+                <img src="img/anh2.png" alt="" stt="3" id="hinh" style="display: none;">
+                <img src="img/anh3.png" alt="" stt="4" id="hinh" style="display: none;">
+                <img src="img/anh4.png" alt="" stt="5" id="hinh" style="display: none;">
+                <img src="img/anh5.png" alt="" stt="6" id="hinh" style="display: none;">
+                <img src="img/anh6.png" alt="" stt="7" id="hinh" style="display: none;">
+                <img src="img/anh7.png" alt="" stt="8" id="hinh" style="display: none;">
+                <img src="img/anh8.png" alt="" stt="9" id="hinh" style="display: none;">
+                <button onclick="prev()"><</button>
+                <button onclick="next()">></button></div>
+            <div class="combo1nguoi">
+                <H3>COMBO 1 NGƯỜI</H3>
+            </div>
+            <div class="container-sanpham">
+                <div class="sanpham">
+                    <img src="img/garan.png" alt="">
+                    <div class="tensp">Combo Gà Rán</div>
+                    <div class="gia"><b style="font-size: x-large;">78</b>.000đ</div>
+                    <div class="ghichu">
+                        <ul>
+                            <li>2 Miếng Gà Giòn Cay / 2 Miếng Gà Giòn Không Cay / 2 Miếng Gà Truyền thống</li>
+                            <li>1 Pepsi Lon </li>
+                        </ul>
+                    </div>
+                    <div class="nut">
+                        <div class="tuychinh"><button>TÙY CHỈNH</button></div>
+                        <div class="dathang"><button>ĐẶT HÀNG</button></div>
+                    </div>
+                </div>
+
+                <div class="sanpham">
+                    <img src="img/gaquay.png" alt="">
+                    <div class="tensp">Combo Gà Quay</div>
+                    <div class="gia"><b style="font-size: x-large;">90</b>.000đ</div>
+                    <div class="ghichu">
+                        <ul>
+                            <li>1 Miếng Đùi Gà Quay Giấy Bạc / 1 Miếng Đùi Gà Quay Tiêu</li>
+                            <li>1 Cơm Trắng</li>
+                            <li>1 Pepsi Lon </li>
+                        </ul>
+                    </div>
+                    <div class="nut">
+                        <div class="tuychinh"><button>TÙY CHỈNH</button></div>
+                        <div class="dathang"><button>ĐẶT HÀNG</button></div>
+                    </div>
+                </div>
+
+                <div class="sanpham">
+                    <img src="img/miy.png" alt="">
+                    <div class="tensp">Combo Mỳ ý</div>
+                    <div class="gia"><b style="font-size: x-large;">83</b>.000đ</div>
+                    <div class="ghichu">
+                        <ul>
+                            <!-- <li>1 Mì Ý Xốt Cà Gà Viên</li> -->
+                            <li>1 Miếng Gà Giòn Cay / 1 Miếng Gà Giòn Không Cay / 1 Miếng Gà Truyền Thống / 2 Xiên Gà
+                                Tenderods</li>
+                            <!-- <li>1 Pepsi Lon </li> -->
+                        </ul>
+                    </div>
+                    <div class="nut">
+                        <div class="tuychinh"><button>TÙY CHỈNH</button></div>
+                        <div class="dathang"><button>ĐẶT HÀNG</button></div>
+                    </div>
+                </div>
+
+                <div class="sanpham">
+                    <img src="img/comgaran.png" alt="">
+                    <div class="tensp">Combo Cơm Gà Rán</div>
+                    <div class="gia"><b style="font-size: x-large;">68</b>.000đ</div>
+                    <div class="ghichu">
+                        <ul>
+                            <li>1 Cơm Gà Giòn Cay / 1 Cơm Gà Giòn Không Cay / 1 Cơm Gà Truyền Thống</li>
+                            <li>1 Súp Rong Biển</li>
+                            <li>1 Pepsi Lon </li>
+                        </ul>
+                    </div>
+                    <div class="nut">
+                        <div class="tuychinh"><button>TÙY CHỈNH</button></div>
+                        <div class="dathang"><button>ĐẶT HÀNG</button></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--ưu đãi-->
+            <div class="combo1nguoi">
+                <!-- <H3>ƯU ĐÃI - NHÓM MỚI</H3> -->
+            </div>
+            <div class="container-sanpham">
+                <div class="sanpham">
+                    <img src="img/uudai4.jpg" alt="">
+                    <div class="tensp">Combo Gà Que Kem HDB</div>
+                    <div class="gia"><b style="font-size: x-large;">68</b>.000đ</div>
+                    <div class="ghichu">
+                        <ul>
+                            <li>1 Gà Que Kem</li>
+                            <li>1 Miếng Gà Giòn Cay / 1 Miếng Gà Giòn Không Cay </li>
+                        </ul>
+                    </div>
+                    <div class="nut">
+                        <div class="tuychinh"><button>TÙY CHỈNH</button></div>
+                        <div class="dathang"><button>ĐẶT HÀNG</button></div>
+                    </div>
+                </div>
+
+                <div class="sanpham">
+                    <img src="img/uudai7.png" alt="">
+                    <div class="tensp">Combo Đã Khát A</div>
+                    <div class="gia"><b style="font-size: x-large;">60</b>.000đ</div>
+                    <div class="ghichu">
+                        <ul>
+                            <li>1 Cơm Gà Rán / 1 Cơm Gà Bít-tết / 1 Cơm Phi-lê Gà Quay</li>
+                            <li>1 Pepsi</li>
+                        </ul>
+                    </div>
+                    <div class="nut">
+                        <div class="tuychinh"><button>TÙY CHỈNH</button></div>
+                        <div class="dathang"><button>ĐẶT HÀNG</button></div>
+                    </div>
+                </div>
+
+                <div class="sanpham">
+                    <img src="img/miy.png" alt="">
+                    <div class="tensp">Combo Salad Hạt A</div>
+                    <div class="gia"><b style="font-size: x-large;">71</b>.000đ</div>
+                    <div class="ghichu">
+                        <ul>
+                            <li>1 Salad Hạt</li>
+                            <li>1 Burger Zinger / 1 Burger Gà Quay Flava</li>
+                            <li>1 Pepsi</li>
+                        </ul>
+                    </div>
+                    <div class="nut">
+                        <div class="tuychinh"><button>TÙY CHỈNH</button></div>
+                        <div class="dathang"><button>ĐẶT HÀNG</button></div>
+                    </div>
+                </div>
+
+                <div class="sanpham">
+                    <img src="img/uudai17.jpg" alt="">
+                    <div class="tensp">BÁNH TRỨNG SÔ-CÔ-LA HẠNH NHÂN (4 CÁI)</div>
+                    <div class="gia"><b style="font-size: x-large;">61</b>.000đ</div>
+                    <div class="ghichu">
+                        <ul>
+                            <li>4 Bánh Trứng Sô-Cô-La Hạnh Nhân</li>
+                            <li style="list-style-type: none;">
+                                <p style="color: #fff;">.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nut">
+                        <div class="tuychinh"><button>TÙY CHỈNH</button></div>
+                        <div class="dathang"><button>ĐẶT HÀNG</button></div>
+                    </div>
+                </div>
+            </div>
+            <!--End Ưu đãi-->
+            <div class="banner-end">
+                <div class="banner-left"></div>
+                <div class="banner-right"></div>
+            </div>
+        </article>
+
+        <!---->
+
+        <footer>
+            <div class="logo-footer">
+                <img src="img/logo-footer.png" alt="">
+            </div>
+            <div class="menu-footer">
+                <div class="menu1">
+                    <ul style="font-weight: bold;">
+                        <li><a href="">THỰC ĐƠN</a></li>
+                        <li><a href="">NHÀ HÀNG</a></li>
+                        <li><a href="">TIN KHUYẾN MÃI</a></li>
+                        <li><a href="">ĐẶT TIỆC SINH NHẬT</a></li>
+                        <li><a href="">THÀNH VIÊN</a></li>
+                    </ul>
+                </div>
+                <div class="menu2" style="margin-left: 5%;">
+                    <ul>
+                        <li style="font-weight: bold;"><a href="">GIỚI THIỆU</a></li>
+                        <li><a href="">KFC Việt Nam</a></li>
+                        <li><a href="">Tin tức</a></li>
+                    </ul>
+                </div>
+                <div class="menu3" style="margin-left: 5%;">
+                    <ul>
+                        <li style="font-weight: bold;"><a href="">NGHỀ NGHIỆP</a></li>
+                        <li><a href="">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+                <div class="menu4" style="margin-left: 5%;">
+                    <div class="menu4-top">
+                        <ul class="menu4-chu">
+                            <li style="font-weight: bold;"><a href="">KẾT NỐI VỚI KFC</a></li>
+                            <li><a href="">Liên Hệ</a></li>
+                        </ul>
+                        <ul class="menu4-logo" style="margin-left: 100px;">
+                            <li><a href=""><img src="https://kfcvietnam.com.vn/templates/images/icon_fb_red.svg"
+                                        alt=""></a></li>
+                            <li><a href=""><img src="https://kfcvietnam.com.vn/templates/images/icon_yt_red.svg"
+                                        alt=""></a></li>
+                            <li><a href=""><img src="https://kfcvietnam.com.vn/templates/images/icon_ins_red.svg"
+                                        alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="menu4-bottom" style="margin-top: 50px;">
+                        <p><b>ĐĂNG KÍ NHÂN THÔNG TIN ƯU ĐÃI</b></p>
+                        <input type="text" placeholder="Nhập email">
+                        <button>Đăng kí</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="menu5">
+                <div class="menu5-chu">
+                    <ul>
+                        <li><b>CÔNG TY MỘT THÀNH VIÊN KFC VIỆT NAM</b></li>
+                        <li>Số 164 Bà Triệu, P. Lê Đại Hành, Q. 12, TP. HCM.</li>
+                        <li>Điện thoại: 0362378890</li>
+                        <li>Email: <a href="" style="text-decoration: none;">minhnqps24074@fpt.edu.vn</a></li>
+                        <li>Mã số thuế: 0100773885</li>
+                        <li>Ngày cấp: 29/10/1998 - Nơi cấp: Cục Thuế Thành Phố HCM </li>
+                    </ul>
+                </div>
+                <div class="menu5-logo">
+                    <img src="img/logo_bocongthuong.png" alt="">
+                </div>
+            </div>
+            <div class="menu6">
+                Chính sách và quy định chung | Chính sách hoạt động | Chính sách bảo mật thông tin <p></p>
+                Copyright © 2022 KFC Vietnam
+            </div>
+            <div class="box-footer"></div>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+<script>
+    // khai bao anh
+    var arr_hinh = [
+        "img/anh0.png",
+        "img/anh1.png",
+        "img/anh2.png",
+        "img/anh3.png",
+        "img/anh4.png",
+        "img/anh5.png",
+        "img/anh6.png",
+        "img/anh7.png",
+        "img/anh8.png",
+    ]
+
+    // nut chuyen tiep anh 
+    var index = 0;
+    function next() {
+        index++;
+        if (index >= arr_hinh.length) index = 0;
+        var hinh = document.getElementById("hinh");
+        hinh.src = arr_hinh[index];
+        document.getElementById("demm").innerHTML = index + "/" + arr_hinh.length;
+    }
+    // lui anh 
+    function prev() {
+        index--;
+        if (index < 0) index = arr_hinh - 1;
+        var hinh = document.getElementById("hinh");
+        document.getElementById("hinh").src = arr_hinh[index];
+        document.getElementById("demm").innerHTML = index + "/" + arr_hinh.length;
+    }
+    // slide tu chay
+    setInterval("next()", 10000);
+</script>
